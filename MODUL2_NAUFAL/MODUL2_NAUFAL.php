@@ -2,7 +2,7 @@
 // tangkap nilai MK_KI1201, MK_KU1202, dan MK_KU1102 yang ada pada form html
 // silakan taruh code kalian di bawah
 // **********************  1  ************************** 
-if ($_POST){
+if ((isset($_POST['submit']))){
     $MK_KI1201 = $_POST["MK_KI1201"];
     $MK_KU1202 = $_POST["MK_KU1202"];
     $MK_KU1102 = $_POST["MK_KU1102"];
@@ -93,7 +93,7 @@ if (($MK_KU1202 == $nilaiA || $MK_KU1202 == $nilaiAB) && ($MK_KU1102 == $nilaiB 
                             </select>
                         </div>
                         <div class="submit">
-                            <button class="btn btn-primary" type="submit">Submit form</button>
+                            <button class="btn btn-primary" name='submit' type="submit">Submit form</button>
                         </div>
                     </form>
 
